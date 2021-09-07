@@ -30,3 +30,10 @@ SQL:
 ```SQL
 select productLine from ProductLines where productLine like '%cars%';
 ```
+
+5. Report total payments for October 28, 2004.
+
+SQL:
+```SQL
+select * from Payments where date(paymentDate) = '2004-10-28';
+```
