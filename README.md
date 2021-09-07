@@ -79,3 +79,10 @@ SQL:
 ```SQL
 select AVG(((MSRP - buyPrice) / (buyPrice)) * 100) as 'AVG Markup Percentage' from Products;
 ```
+
+12. How many distinct products does ClassicModels sell?
+
+SQL:
+```SQL
+select COUNT(DISTINCT(ProductName)) as 'Distinct Products Count' from Products;
+```
