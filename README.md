@@ -72,3 +72,10 @@ SQL:
 ```SQL
 select * from Payments where amount > ( select 2 * AVG(amount)  from Payments);
 ```
+
+11. What is the average percentage markup of the MSRP on buyPrice?
+
+SQL:
+```SQL
+select AVG(((MSRP - buyPrice) / (buyPrice)) * 100) as 'AVG Markup Percentage' from Products;
+```
