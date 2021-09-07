@@ -65,3 +65,10 @@ SQL:
 ```SQL
 select MIN(amount) as 'Min amount' from Payments;
 ```
+
+10. List all payments greater than twice the average payment.
+
+SQL:
+```SQL
+select * from Payments where amount > ( select 2 * AVG(amount)  from Payments);
+```
