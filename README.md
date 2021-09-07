@@ -108,3 +108,12 @@ SQL:
 ```SQL
 select orderNumber  from orderDetails where (quantityOrdered * priceEach ) > 5000;
 ```
+
+# One to many relationship
+
+1. Report the account representative for each customer.
+
+SQL:
+```SQL
+select C.customerName as 'Customer Name', CONCAT(E.firstName, ' ', E.lastName) as 'Account representative' from Customers C INNER JOIN Employees E ON C.salesRepEmployeeNumber = E.employeeNumber;
+```
