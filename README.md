@@ -9,3 +9,10 @@ SQL:
 ```SQL
 select * from offices order by country, state, city;
 ```
+
+2. How many employees are there in the company?
+
+SQL:
+```SQL
+select COUNT(*) as 'Number of Employees' from employees;
+```
