@@ -37,3 +37,10 @@ SQL:
 ```SQL
 select * from Payments where date(paymentDate) = '2004-10-28';
 ```
+
+6. Report those payments greater than $100,000.
+
+SQL:
+```SQL
+select * from Payments where amount > 100000;
+```
