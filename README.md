@@ -21,5 +21,12 @@ select COUNT(*) as 'Number of Employees' from employees;
 
 SQL:
 ```SQL
+select SUM(amount) as 'Total payments received'  from Payments;
+```
 
+4. List the product lines that contain 'Cars'.
+
+SQL:
+```SQL
+select productLine from ProductLines where productLine like '%cars%';
 ```
