@@ -51,3 +51,10 @@ SQL:
 ```SQL
 select productName, productLine from products order by productLine;
 ```
+
+8. How many products in each product line?
+
+SQL:
+```SQL
+select  productLine, COUNT(1) as 'Number of Products' from products group by productLine;
+```
