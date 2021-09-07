@@ -93,3 +93,11 @@ SQL:
 ```SQL
 select customerName, city from customers where salesRepEmployeeNumber IS NULL;
 ```
+
+14. What are the names of executives with VP or Manager in their title? Use the CONCAT function to combine the employee's first name and last name into a single field for reporting.
+
+
+SQL:
+```SQL
+select CONCAT(firstName, lastName) as 'Employee Name' from Employees where jobTitle like '%VP%' or jobTitle like '%Manager%';
+```
