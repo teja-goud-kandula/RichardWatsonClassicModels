@@ -99,5 +99,5 @@ select customerName, city from customers where salesRepEmployeeNumber IS NULL;
 
 SQL:
 ```SQL
-select CONCAT(firstName, lastName) as 'Employee Name' from Employees where jobTitle like '%VP%' or jobTitle like '%Manager%';
+select CONCAT(firstName,' ' ,lastName) as 'Employee Name' from Employees where jobTitle like '%VP%' or jobTitle like '%Manager%';
 ```
