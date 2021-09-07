@@ -58,3 +58,10 @@ SQL:
 ```SQL
 select  productLine, COUNT(1) as 'Number of Products' from products group by productLine;
 ```
+
+9. What is the minimum payment received?
+
+SQL:
+```SQL
+select MIN(amount) as 'Min amount' from Payments;
+```
