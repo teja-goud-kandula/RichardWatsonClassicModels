@@ -86,3 +86,10 @@ SQL:
 ```SQL
 select COUNT(DISTINCT(ProductName)) as 'Distinct Products Count' from Products;
 ```
+
+13. Report the name and city of customers who don't have sales representatives?
+
+SQL:
+```SQL
+select customerName, city from customers where salesRepEmployeeNumber IS NULL;
+```
