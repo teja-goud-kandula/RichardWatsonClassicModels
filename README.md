@@ -101,3 +101,10 @@ SQL:
 ```SQL
 select CONCAT(firstName,' ' ,lastName) as 'Employee Name' from Employees where jobTitle like '%VP%' or jobTitle like '%Manager%';
 ```
+
+15. Which orders have a value greater than $5,000?
+
+SQL:
+```SQL
+select orderNumber  from orderDetails where (quantityOrdered * priceEach ) > 5000;
+```
