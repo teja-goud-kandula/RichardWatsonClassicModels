@@ -16,3 +16,10 @@ SQL:
 ```SQL
 select COUNT(*) as 'Number of Employees' from employees;
 ```
+
+3. What is the total of payments received?
+
+SQL:
+```SQL
+
+```
