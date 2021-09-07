@@ -44,3 +44,10 @@ SQL:
 ```SQL
 select * from Payments where amount > 100000;
 ```
+
+7. List the products in each product line.
+
+SQL:
+```SQL
+select productName, productLine from products order by productLine;
+```
